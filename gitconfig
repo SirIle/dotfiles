@@ -96,6 +96,9 @@
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
 
+	# Set atom as the default commit message editor
+	editor = atom --wait
+
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
@@ -164,6 +167,3 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
-[user]
-	name = Ilkka Anttonen
-	email = ilkka.anttonen@gmail.com
