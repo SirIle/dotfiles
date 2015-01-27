@@ -1,7 +1,7 @@
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	l = log --decorate --pretty=oneline -n 20 --graph --abbrev-commit
 
 	# View the current working tree status using the short format
 	s = status -s
@@ -166,4 +166,4 @@
 	insteadOf = "gist:"
 [user]
 	name = Ilkka Anttonen
-	email = ilkka.anttonen@accenture.com
+	email = ilkka.anttonen@gmail.com
