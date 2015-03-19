@@ -24,7 +24,7 @@ alias g="git"
 alias afk="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup;(cd ~/.dotfiles && brew brewdle);npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
