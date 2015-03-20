@@ -1,0 +1,5 @@
+function dock() {
+  # Point docker client and docker-machine to the given node
+  docker-machine active $@
+  $(docker-machine env $@)
+}
