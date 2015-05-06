@@ -1,5 +1,11 @@
 function dock() {
   # Point docker client and docker-machine to the given node
   docker-machine active $@
-  $(docker-machine env $@)
+  eval "$(docker-machine env)"
+}
+
+function cleardock() {
+  docker kill `docker ps -aq`
+  docker rm `docker ps -aq`
+  docker rmi `docker images --filter "dangling=true" -q`
 }
