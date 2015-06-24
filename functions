@@ -1,7 +1,6 @@
 function dock() {
   # Point docker client and docker-machine to the given node
-  docker-machine active $@
-  eval "$(docker-machine env)"
+  eval "$(docker-machine env $@)"
 }
 
 function cleardock() {
