@@ -24,10 +24,17 @@ alias g="git"
 alias afk="sudo open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup;(cd ~/.dotfiles && brew brewdle);brew cask cleanup;npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup;(cd ~/.dotfiles && brew brewdle);brew cask cleanup;npm install npm -g; npm update -g; gem update --system; gem update; gem cleanup'
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
 # List docker-machine instances
 alias docks="docker-machine ls"
+
+# Aliases for thefuck
+eval "$(thefuck --alias)"
+
+# Aliases for Docker listings
+alias docl=~/Projects/scripts/docker-container-list
+alias doil=~/Projects/scripts/docker-image-list
