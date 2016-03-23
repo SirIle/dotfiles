@@ -49,4 +49,11 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # Add completion to aws
 complete -C aws_completer aws
 
+# RBEnv settings
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# PYEnv settings
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+# JEnv settings
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
