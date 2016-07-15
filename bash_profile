@@ -57,3 +57,8 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # JEnv settings
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
+# DVM settings
+[[ -s "$(brew --prefix dvm)/dvm.sh" ]] && source "$(brew --prefix dvm)/dvm.sh"
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
