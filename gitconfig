@@ -96,8 +96,8 @@
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
 
-	# Set atom as the default commit message editor
-	editor = atom --wait
+	# Set visual studio code as the default commit message editor
+	editor = code --wait
 
 [color]
 
@@ -167,9 +167,3 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
-
-[user]
-       name = Ilkka Anttonen
-       email = ilkka.anttonen@accenture.com
-[credential]
-       helper = osxkeychain
