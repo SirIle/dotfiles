@@ -167,3 +167,9 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[user]
+       name = Ilkka Anttonen
+       email = ilkka.anttonen@accenture.com
+[credential]
+       helper = osxkeychain
