@@ -16,7 +16,7 @@ alias g="git"
 alias afk="open /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app"
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew cleanup;(cd ~/.dotfiles && brew bundle);brew cask cleanup;yarn global add salita@latest serverless@latest; gem update --system; gem update; gem cleanup'
+alias update='sudo softwareupdate -i -a; brew upgrade; brew cask upgrade;brew cleanup;yarn global upgrade --latest; gem update --system; gem update; gem cleanup'
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
