@@ -1,1 +1,1 @@
-export PATH="/usr/local/bin:$HOME/.node/bin:$GOPATH/bin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/bin:$HOME/bin:$HOME/.node/bin:$GOPATH/bin:$PATH"
