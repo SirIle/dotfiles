@@ -3,7 +3,6 @@ tap 'thoughtbot/formulae'
 tap 'homebrew/bundle'
 tap 'wallix/awless'
 cask 'iterm2'
-cask 'java8'
 cask 'java'
 cask 'dropbox'
 cask 'spotify'
@@ -27,4 +26,4 @@ brew 'bash-completion@2'
 brew 'httpie'
 brew 'awless'
 brew 'awscli'
-brew 'yarn', args: ['without-node']
+brew 'yarn', args: ['ignore-dependencies']
